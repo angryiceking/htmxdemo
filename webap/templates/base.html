@@ -1,0 +1,38 @@
+{% load static %}
+<!-- Load from unpkg -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>L U M I N E</title>
+    <link rel="stylesheet" href="{% static 'css/bulma.min.css' %}">
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/custom.js' %}"></script>
+    <script src="https://unpkg.com/htmx.org@1.3.3"></script>
+    <style>
+        .navbar-brand {
+            width: 100%;
+        }
+
+        .navbar {
+            flex-wrap: wrap;
+        }
+
+        .navbar-brand {
+            justify-content: space-between;
+        }
+
+        .is-horizontal-center {
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    {% block content %}
+    {% endblock %}
+</body>
+
+</html>
